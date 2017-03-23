@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haresh.circleimagecrop.activities.CropImageActivity">
+
+
+    <com.circleimagecrop.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center" />
+
+    <com.circleimagecrop.cropoverlay.CropOverlayView
+        android:id="@+id/cropOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:guideLines="false"
+        app:marginSide="10dp"
+        app:marginTop="20dp" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnrBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/move_and_resize_to_crop"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:id="@+id/lnrBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_30sdp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/done"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

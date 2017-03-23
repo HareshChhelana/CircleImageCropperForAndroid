@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CircleImageCrop</string>
+    <string name="unable_to_crop">Unable to crop</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="take_from_camera">Take From Camera</string>
+    <string name="unable_to_get_image">Unable to get image</string>
+    <string name="select_picture">Select Picture</string>
+</resources>
